@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* ::-webkit-scrollbar {
+  width: 0;
+} */
+
+.Container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* border: 2px solid green; */
+  height: 100%;
+  overflow-y: scroll !important;
+}
+
+nav {
+  background: whitesmoke;
+  /* color: ; */
+  width: 100%;
+  /* height: 30px; */
+  position: sticky;
+  top: 0%;
+  left: 0%;
+
+  margin-bottom: 20px;
+  border: 1px solid;
+  z-index: 10;
+
+  /* mix-blend-mode: difference; */
+  /* filter: blur(5px); */
+}
+
+#overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  /* left: 0; */
+  /* width: 0%; */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+
+  transition: all 1ms;
+}
+
+nav ul {
+  list-style: none;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 30px;
+  padding: 10px;
+}
+
+#content {
+  position: relative;
+  z-index: 9;
+  /* height: 100%; */
+  /* border: 2px solid black; */
+}
+
+nav ul li {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border: 1px solid;
+
+  animation: sankalp 1.5s linear forwards;
+
+  cursor: pointer;
+}
+
+@keyframes sankalp {
+  30% {
+    transform: translateY(-20px);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(-180px);
+  }
+}
+
+h1 {
+  font-size: 100px;
+  animation: aksh 3s linear infinite;
+}
+
+@keyframes aksh {
+  20% {
+    text-shadow: 10px 5px cyan, 15px 10px blue, 20px 15px purple,
+      25px 20px lightblue, 35px 25px lightcoral;
+  }
+
+  40% {
+    text-shadow: 10px 5px lightcoral, 15px 10px cyan, 20px 15px blue,
+      25px 20px purple, 35px 25px lightblue;
+  }
+
+  60% {
+    text-shadow: 10px 5px lightblue, 15px 10px lightcoral, 20px 15px cyan,
+      25px 20px blue, 35px 25px purple;
+  }
+
+  80% {
+  }
+
+  100% {
+  }
+}

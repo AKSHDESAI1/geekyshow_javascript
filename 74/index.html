@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Deleting Properties in JavaScript </title>
+
+  <!-- External CSS Stylesheet Link  -->
+  <link rel="stylesheet" href="/74/index.css">
+</head>
+
+<body>
+
+  <fieldset action="">
+    <legend>Add Property</legend>
+
+    <form action="" id="addPropertyForm">
+      <label for="key">Key</label>
+      <input type="text" name="Key" id="key" required>
+
+      <label for="Value">Value</label>
+      <input type="text" name="Value" id="Value" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </fieldset>
+  <label id="addProperty_Msg"> </label>
+
+
+  <fieldset>
+    <legend> Get Property </legend>
+
+    <form id="getPropertyForm" action="">
+      <label for="Key"> Key </label>
+      <input type="text" id="key" required>
+
+      <label for="Value"> Value </label>
+      <input type="text" readonly id="Value">
+
+      <input type="submit" value="Submit">
+    </form>
+  </fieldset>
+  <label id="getProperty_Msg"> </label>
+
+  <fieldset>
+    <legend> Delete Property </legend>
+
+    <form action="">
+      <label for="Key"> Key </label>
+      <input type="text" id="key" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </fieldset>
+
+
+  <ul id="container">
+
+  </ul>
+
+
+
+</body>
+
+<script src="/74/index.js"></script>
+
+</html>

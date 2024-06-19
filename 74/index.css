@@ -1,0 +1,71 @@
+* {
+  /* transition: all 0.2s; */
+}
+
+#addProperty_Msg {
+  color: green;
+}
+
+fieldset:focus-within {
+  background: tomato;
+}
+
+input:focus-within {
+  border: 2px solid red;
+  box-shadow: 0px 0px 5px cyan;
+}
+
+#container {
+  max-width: 500px;
+  height: 500px;
+  background-color: blue;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  background: cyan;
+  margin: 5px;
+  padding: 15px;
+  color: white;
+}
+
+li {
+  animation: aksh, rudra;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%, exit-crossing 0% cover 100%;
+  view-timeline-inset: 0%, 30%;
+}
+
+@keyframes aksh {
+  0% {
+    /* opacity: 0.5; */
+    transform: translateY(0px);
+  }
+  45% {
+    background: purple;
+    /* opacity: 1; */
+    transform: translateY(-20px);
+  }
+  100% {
+    background: purple;
+  }
+}
+
+@keyframes rudra {
+  from {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+  to {
+    background: purple;
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}

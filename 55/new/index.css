@@ -1,0 +1,46 @@
+body {
+  background: #030637;
+  color: wheat;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"] {
+  background: #3c0753;
+  color: wheat;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  background: #3c0753;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+fieldset legend {
+  color: #910a67;
+}
+
+#slider {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #910a67;
+  border-top-color: wheat;
+  margin: auto;
+  animation: slide 1.5s linear infinite;
+  display: none;
+}
+
+@keyframes slide {
+  to {
+    transform: rotate(360deg);
+  }
+}
